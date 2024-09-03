@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.Flipkart'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+application {
+    mainClass.set('org.Flipkart.ManagerApplication')
+}
+
+dependencies {
+    implementation 'io.dropwizard:dropwizard-db:2.1.0'
+    implementation 'io.dropwizard:dropwizard-core:2.1.0'
+    implementation 'io.dropwizard:dropwizard-hibernate:2.1.0'
+    implementation 'org.hibernate:hibernate-core:5.5.7.Final'
+
+    implementation 'com.google.inject:guice:5.0.1'
+    implementation 'javax.persistence:javax.persistence-api:2.2'
+    implementation 'mysql:mysql-connector-java:8.0.30'
+    implementation 'org.projectlombok:lombok:1.18.24'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation 'org.mockito:mockito-core:4.0.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.0.0'
+    testImplementation 'org.assertj:assertj-core:3.21.0'
+
+
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+    testImplementation 'org.mockito:mockito-core:4.8.0'
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,30 @@
+<!--<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">-->
+<!--<hibernate-configuration>-->
+<!--    <session-factory>-->
+<!--        &lt;!&ndash; JDBC Database connection settings &ndash;&gt;-->
+<!--        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>-->
+<!--        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/UserWallet</property>-->
+<!--        <property name="hibernate.connection.username">root</property>-->
+<!--        <property name="hibernate.connection.password">Parth@workbench1</property>-->
+
+<!--        &lt;!&ndash; Specify dialect &ndash;&gt;-->
+<!--        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>-->
+
+<!--        &lt;!&ndash; Enable Hibernate's automatic session context management &ndash;&gt;-->
+<!--        <property name="hibernate.current_session_context_class">thread</property>-->
+
+<!--        &lt;!&ndash; Echo all executed SQL to stdout &ndash;&gt;-->
+<!--        <property name="hibernate.show_sql">true</property>-->
+
+<!--        &lt;!&ndash; Drop and re-create the database schema on startup &ndash;&gt;-->
+<!--        <property name="hibernate.hbm2ddl.auto">update</property>-->
+
+<!--        <property name="show_sql">true</property>-->
+
+<!--        &lt;!&ndash; Mention annotated classes &ndash;&gt;-->
+<!--        <mapping class="org.Flipkart.service.UserService"/>-->
+
+
+
+<!--    </session-factory>-->
+<!--</hibernate-configuration>-->
